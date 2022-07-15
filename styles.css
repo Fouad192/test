@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first, .second, .third, .fourth, .fifth {
+    width: 200px;
+    height: 200px;
+}
+
+.first {
+    background-color: black;
+}
+.second {
+    background-color: red;
+}
+.third {
+    background-color: blue;
+}
+.fourth {
+    background-color: blueviolet;
+}
+
+.fifth {
+    background-color: chocolate;
+}
+
+.parent {
+    display: grid;
+    grid-template-areas: "one one one one"
+    "two two three three"
+    ". . fourth fourth";
+}
+
+
+.first {
+    grid-area: one;
+}
+
+.second {
+    grid-area: two;
+}
+
+.third {
+    grid-area: three;
+}
+
+.fourth {
+    grid-area: fourth;
+}
